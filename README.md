@@ -19,7 +19,7 @@ make
 ```
 ## Problem using the routine make process on M1 Macs
 On your M1 Mac all is fine as far as geting bwa.git to transfer files, but sadly the `make` process reports errors. The solutions I found indicated I
-had to employ `wget1` to swap a different library during the compilation step called by by `make`.
+had to employ `wget` to swap a different library during the compilation step called by by `make`.
 
 It can get more annoying if you do not have `wget` installed, so the best solution I found was to use Home Brew to install `wget`, then you are on 
 your way to getting `bwa` installed. 
