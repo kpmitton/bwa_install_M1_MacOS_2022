@@ -8,7 +8,7 @@ mitton@oakland.edu
 
 How to install bwa for DNA sequencing on a M1 Mac. The regular make routine must be modified for the newer non-Intel Macs.
 I found some guidance and reference to them here and also provide the commands that I found worked well to get bwa installed on an M1 Mac running Big Sur. 
-The install information for bwa works fine on an Intel Mac, as you can do in a typical bash terminal window with:
+The routine install information for bwa works fine on an Intel Mac, in a typical bash terminal window with:
 ## Routine installation on Intel Macs
 ```
 git clone https://github.com/lh3/bwa.git
@@ -19,7 +19,7 @@ make
 ```
 ## Problem using the routine make process on M1 Macs
 On your M1 Mac all is fine as far as geting bwa.git to transfer files, but sadly the `make` process reports errors. The solutions I found indicated I
-had to employ `wget` to swap a different library during the compilation step called by by `make`.
+had to employ `wget` to swap a different library during the compilation step called by `make`.
 
 It can get more annoying if you do not have `wget` installed, so the best solution I found was to use Home Brew to install `wget`, then you are on 
 your way to getting `bwa` installed. 
